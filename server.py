@@ -12,6 +12,6 @@ while True:
     c, addr = s.accept()
     print("Connected with ", addr)
 
-    c.send("Connected to server ")
+    c.send(bytes("Connected to server ".encode()))
 
-    s.close()
+    c.close()
